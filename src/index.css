@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #edf0f5;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#submission-form {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    width: 50vw;
+    margin: 1rem auto;
+    padding: 0.5rem 0;
+    border-radius: 8px;
+}
+
+#submission-form div {
+    display: flex;
+    flex-direction: column;
+    margin: 0.3rem;
+}
+
+.notification{
+    color: green;
+    border: 2px solid green;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+select,
+input {
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid purple;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+select:focus,
+input:focus {
+    outline: none;
+}
+
+label{
+    margin: 4px 0;
+}
+
+button{
+    background-color: purple;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    cursor: pointer;
+
+}
+
+.heading{
+    text-decoration: underline;
+}
+
+.table-heading{
+    font-weight: 700;
+    font-family: 'Headland One', serif;
+}
+
+@media (max-width:750px) {
+    #submission-form{
+        width: 90vw;
+    }
 }
